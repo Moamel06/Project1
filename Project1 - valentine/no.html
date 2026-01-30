@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Haha, nice try!</title>
+        <link rel="stylesheet" href="dani.css" />
+        <link rel="stylesheet" href="dani.html">
+        <link rel="shortcut icon" type="image/x-icon" href="fotos/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="author" content="Moamel AlRubaye" />
+        <meta name="description" content="Do you want to be my valentine?" />
+    </head>
+    <body>
+        <div class="container">
+<header>
+    <h1>Error 404: Afwijzing niet gevonden</h1>
+    <p>Oei, volgens mij gleed je vinger uit...</p>
+</header>
+
+<div class="head_tekst" style="text-align: center;">
+    <h2>Dat was vast een vergissing!</h2>
+    <p>
+        Mijn systeem geeft aan dat je "Ja!!" probeerde te klikken, maar dat de zwaartekracht even tegenzat. 😉 <br>
+        Geen zorgen, ik ben de moeilijkste niet. Ik heb de pagina gereset zodat je je foutje kunt herstellen.
+    </p>
+</div>
+             <div id="confetti-overlay" style="display:flex; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,192,203,0.7); z-index:9999; justify-content:center; align-items:center; flex-direction:column; opacity:1; transition: opacity 0.5s ease-out;">
+            <h1 style="font-size: 100px; margin-bottom: 20px;">⛔️⛔️⛔️</h1>
+            <h2 style="font-family: 'Quicksand', sans-serif; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">OOPS, ERROR!</h2>
+        </div>
+
+            <div class="vraag">
+                <div class="knoppen-groep">
+                    <div onclick="window.location.href='index.html'">
+                        <p>Probeer opnieuw</p>
+                    </div>
+                </div>
+            </div>
+            <figure class="foto">
+                <img
+                    src="fotos/EuKFgZAVcAAijgO.jpg"
+                    alt=""
+                    title="The Brown Bear its me and the white one its you ;)" />
+            </figure>
+        </div>
+
+          <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy;Moamel Al-Rubaye 2026-2027. All Rights Reserved.</div>
+                </div>
+            </div>
+        </footer>
+                <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const confettiOverlay = document.getElementById('confetti-overlay');
+
+                
+                confettiOverlay.style.display = 'flex';
+                confettiOverlay.style.opacity = '1';
+
+               
+                setTimeout(() => {
+                    confettiOverlay.style.opacity = '0'; 
+                    setTimeout(() => {
+                        confettiOverlay.style.display = 'none'; 
+                    }, 500); 
+                }, 2000); 
+            });
+        </script>
+    </body>
+</html>

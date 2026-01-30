@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>YEEES! ❤️</title>
+        <link rel="stylesheet" href="dani.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="fotos/favicon.ico" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="author" content="Moamel AlRubaye" />
+        <meta name="description" content="Do you want to be my valentine?" />
+    </head>
+    <body>
+        <div id="confetti-overlay" style="display:flex; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255,192,203,0.7); z-index:9999; justify-content:center; align-items:center; flex-direction:column; opacity:1; transition: opacity 0.5s ease-out;">
+            <h1 style="font-size: 100px; margin-bottom: 20px;">🎉🎉🎉</h1>
+            <h2 style="font-family: 'Quicksand', sans-serif; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">HOEEERAAA!</h2>
+        </div>
+
+        <div class="bg-hearts">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="container yes-page-container">
+            <header>
+                <h1>Systeemstatus: 100% Liefde! ❤️</h1>
+                <p>Update voltooid. Je hebt zojuist de 'Beste Keuze Ooit' geïnstalleerd.</p>
+            </header>
+
+            <div class="head_tekst" style="text-align: center;">
+                <h2>Toegang verleend tot mijn hart!</h2>
+                <p>
+                    Mijn systeem crasht bijna van geluk. 😍 <br>
+                    14 februari staat nu vergrendeld in de agenda. Geen annuleringen mogelijk (en die wilde je toch al niet)! <br><br>
+                    Gelukkige Valentijn!
+                </p>
+                <div class="big-heart">💖</div>
+            </div>
+
+            <div class="celebration-area">
+                <div class="figuur links">
+                    <img src="fotos/01.webp" alt="Beer met hartje" title="The White One is you">
+                </div>
+                
+                <div class="figuur rechts">
+                    <img src="fotos/0fc38caa2c0e386a8db710fdc3e29c72.jpg" alt="Kat met bloemen" title="The Brown Bear is me">
+                </div>
+            </div>
+
+            <div class="vraag">
+                <div class="knoppen-groep">
+                    <div onclick="window.location.href='index.html'"> <p>Nog eens lezen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy;Moamel Al-Rubaye 2026-2027. All Rights Reserved.</div>
+                 </div>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const confettiOverlay = document.getElementById('confetti-overlay');
+
+                
+                confettiOverlay.style.display = 'flex';
+                confettiOverlay.style.opacity = '1';
+
+               
+                setTimeout(() => {
+                    confettiOverlay.style.opacity = '0'; 
+                    setTimeout(() => {
+                        confettiOverlay.style.display = 'none'; 
+                    }, 500); 
+                }, 2000); 
+            });
+        </script>
+    </body>
+</html>

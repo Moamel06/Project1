@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>For Dani ❤️</title>
+        <link rel="stylesheet" href="dani.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="fotos/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    </head>
+    <body>
+        <div id="progress-bar"></div>
+
+        <div class="container">
+            <header class="typewriter">
+                <h1>Sommige ontmoetingen zijn geen toeval...</h1>
+                <p>
+
+        Ik geloof niet in toeval, maar ik geloof wel in het juiste moment. 
+
+        Dit is geen groot cadeau, maar een klein venster naar hoe ik over je denk.
+
+    </p>
+               
+            </header>
+
+            <div class="head_tekst">
+                <h2>Voor iemand die meer voor mij betekent dan ze denkt:</h2>
+               <p>
+
+                    Sinds die dag op 24 oktober, om precies 14:35, is er iets begonnen dat ik niet meer kan negeren. 109
+
+                    dagen zijn voorbijgegaan  dagen gevuld met gedachten aan jou, momenten waarop ik je miste, momenten
+
+                    waarop ik glimlachte zonder reden, gewoon omdat jij ergens in mijn hoofd opdook. 2616 uur waarin
+
+                    jij, zonder dat je het wist, een plek kreeg in mijn dagen. 156 960 minuten waarin ik me afvroeg hoe
+
+                    het komt dat iemand zo zacht kan binnenkomen in je leven. 9 417 600 seconden waarin mijn gevoel
+
+                    alleen maar sterker werd. Het is vreemd hoe tijd werkt. Bij sommige mensen voelt elke seconde zwaar,
+
+                    maar bij jou voelt elke seconde licht. Alsof de wereld even stopt met duwen en gewoon ademt. Je hebt
+
+                    iets dat ik moeilijk kan uitleggen. Iets warms. Iets dat rust geeft. Iets dat blijft hangen, zelfs
+
+                    wanneer je er niet bent. Je manier van praten, je energie, je aanwezigheid het doet iets met mij.
+
+                    Niet op een overweldigende manier, maar op een rustige, echte manier. Alsof mijn hart zegt: “Hier
+
+                    klopt iets.” En misschien is dit niet het perfecte moment. Misschien is het niet het perfecte
+
+                    verhaal. Maar het is wel echt. En dat is voor mij genoeg. Dus hier, op deze dag, wil ik je iets
+
+                    kleins maar oprechts zeggen: Je betekent meer voor mij dan je denkt. En ik ben dankbaar voor elke
+
+                    seconde  alle 9 417 600 ervan die mij dichter bij dit gevoel heeft gebracht.
+
+                </p>
+            </div>
+
+            <div class="lijst">
+                <h2>Waarom jij zo bijzonder bent:</h2>
+                <ul>
+                    <li>Je hebt een warme energie die alles om je heen lichter maakt</li>
+                    <li>Je maakt dingen mooier, puur door er te zijn</li>
+                    <li>Je hebt een lach waar ik zelf ook meteen van moet glimlachen</li>
+                    <li>De manier waarop je praat en luistert is uniek</li>
+                    <li>Je bent oprecht en jezelf, en dat is het mooiste wat er is</li>
+                    <li>Je verdient iemand die ziet hoe speciaal je bent</li>
+                </ul>
+            </div>
+
+            <figure class="foto">
+                <img src="fotos/Firefly_Pas%20de%20illustratie%20aan%20zodat%20de%20achtergrond%20een%20zachte,%20lichtroze%20kleur%20krijgt.%20Veran%20666957.png" 
+                     alt="Bear and Cat" title="The Brown Bear is me and the white one is you ;)">
+            </figure>
+
+            <div class="vraag">
+                <h2>Do You Want To Be My Valentine?</h2>
+                <div class="knoppen-groep">
+                    <div class="btn-yes" onclick="window.location.href='yes.html'">
+                        <p>Yes!!</p>
+                    </div>
+                    <div id="no-btn" class="btn-no" onclick="window.location.href='no.html'">
+                        <p>No</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-black">
+            <div class="container">
+                <p>&copy; Moamel Al-Rubaye 2026-2027. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            // 1. Zwevende hartjes bij klik
+            document.addEventListener('click', (e) => {
+                const heart = document.createElement('div');
+                heart.innerHTML = '❤️';
+                heart.className = 'floating-heart';
+                heart.style.left = e.clientX + 'px';
+                heart.style.top = e.clientY + 'px';
+                document.body.appendChild(heart);
+                setTimeout(() => heart.remove(), 2000);
+            });
+
+            // 2. Wegspringende Nee-knop (max 4 keer)
+            const noBtn = document.getElementById('no-btn');
+            let moveCount = 0;
+
+            noBtn.addEventListener('mouseover', () => {
+                if (moveCount < 3) {
+                    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+                    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+                    
+                    noBtn.style.position = 'fixed';
+                    noBtn.style.left = x + 'px';
+                    noBtn.style.top = y + 'px';
+                    noBtn.style.zIndex = '999';
+                    
+                    moveCount++;
+                } else {
+                    // Na 4 keer mag ze klikken, we kunnen de knop een beetje laten trillen als hint
+                    noBtn.style.animation = 'shake 0.5s infinite';
+                }
+            });
+
+            // 3. Progress bar bovenaan
+            window.onscroll = function() {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById("progress-bar").style.width = scrolled + "%";
+            };
+        </script>
+    </body>
+</html>
